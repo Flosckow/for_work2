@@ -1,0 +1,11 @@
+
+<ul>
+    {% for product in obj_list %}
+        <li><a href="/main/one_product/{{ product.id }}">{{product.header}}</a></li>
+    {% empty %}
+        <li>No articles yet.</li>
+    {% endfor %}
+</ul>
+
+
+
